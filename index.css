@@ -1,0 +1,84 @@
+:root{
+    --pink: hsl(322, 100%, 66%);
+    --Cyan1: hsl(193, 100%, 96%);
+    --Cyan2: hsl(192, 100%, 9%);
+    --GrayBlue: hsl(208, 11%, 55%);
+    --poppins: 'Poppins', sans-serif;
+    --openFont: 'Open Sans', sans-serif;
+}
+*{
+    margin: 0; box-sizing: border-box;
+}
+body{
+    font-size: 1.125rem;
+    color: var(--GrayBlue);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+  /********   Start        Footer    ********/
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Cyan2);
+    padding: 22px 3.3em 3.3em 3.3em;
+    min-height: 400px;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.875);
+    justify-content: flex-end;
+}
+
+#box-flex{
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr 1.26fr;
+}#box-flex> div{
+    padding: 0 1em 1em 0;
+}
+#foo-col-1> ul> li{
+    margin-bottom: 20px;
+    display: flex;
+}#foo-col-1> ul> li> i{margin-right: 10px; display: inline-block;}#foo-col-1> ul> li> span{display: inline-block;}
+.p{
+    font-size: 1rem;
+    text-align: end;
+}
+#foo-col-2> ul> li, #foo-col-3> ul> li{
+    margin-bottom: 20px; display: flex;
+}
+#foo-col-4> i{
+    margin-right: 6px;
+}
+/********   End        Footer    ********/
+
+img{
+    display: block;
+    width: 14.7em;
+}
+
+.card{
+    height: 300px;
+    border: 1px solid white;
+    border-radius: 8px;
+    width: 77%;
+    margin: auto;
+    box-shadow: 3px 3px 1px rgba(232, 232, 232, 0.41), -3px -3px 1px rgba(232, 232, 232, 0.41);
+}
+
+main{
+    display: grid;
+    margin: 50px 0 50px 0;
+    grid-template-rows: auto;
+    gap: 25px;
+}
+span{
+    display: block;
+}
+#card-1{
+    display: flex;
+
+}#card-1-1{display: flex; flex-direction: column;}

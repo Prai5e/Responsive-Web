@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+}
+:root{
+    --blue: hsl(248, 32%, 49%);
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --dark-blue: hsl(249, 10%, 26%);
+    --gray-blue: hsl(246, 25%, 77%);
+    --font: 'Poppins', sans-serif;
+}
+body{
+    height: 100%;
+    font-size: 16px;
+    font-family: var(--font);
+    color: white;
+}
+main> div{
+    height: 44vw;
+    width: 35vw;
+}
+main{
+    display: flex;
+    height: 100vh;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#box-1{
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    justify-content: center;
+}
+#box-1> h1{
+    font-weight: 700;
+    padding-right: 2.5em;
+    margin-bottom: 20px;
+}
+#box-1> p{
+    color: rgba(255, 255, 255, 0.723);
+}
+#box-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    height: 65vh;
+    width: 100%;
+    padding: 1em 2em 1em 2em;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    box-shadow: 0px 5px rgba(0, 0, 0, 0.411);
+    background-color: white;
+    box-sizing: border-box;
+}
+#p{
+    width: 100%;
+    background-color: var(--blue);
+    text-align: center;
+    padding: 1em 2em 1em 2em;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    box-shadow: 0px 5px rgba(0, 0, 0, 0.411);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+input{
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid var(--gray-blue);
+    padding: 1em;
+    margin: 10px 0 10px 0;
+    border-radius: 7px;
+}
+input:focus{
+    border: 2px solid var(--gray-blue);
+}
+/* /* input:required:valid {
+    border-color: green; */
+  /* }
+  input:invalid {
+    border-color: red;
+  }
+
+  input:focus:invalid {
+    float: right;
+    background: url(./images/icon-error.svg) no-repeat;
+    background-size: 20px;
+  } */
+button{
+    background-color: var(--green);
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    padding: 1em 0 1em 0;
+    margin: 10px 0 10px 0;
+    color: white;
+}
+button:hover{
+    cursor: pointer;
+    background-color: hsl(154, 66%, 83%);
+}
+#form> p{
+    color:hsl(246, 25%, 77%);
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#form> p> span{
+    color:hsl(0, 100%, 74%);
+}
+#p> span{
+    color: var(--gray-blue);
+}
+
+@media (min-width: 1440px){
+    body{
+        background: url(./images/bg-intro-desktop.png), hsl(0, 100%, 74%);
+    }   
+}
+@media (min-width: 375px){
+    body{
+        background: url(./images/bg-intro-mobile.png), hsl(0, 100%, 74%);
+    }
+}
