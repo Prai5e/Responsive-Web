@@ -12,21 +12,23 @@
 body{
     font-size: 1.125rem;
     color: var(--GrayBlue);
+    font-family: var(--openFont);
 }
 a{
     text-decoration: none;
     color: white;
-}
+}a:hover{text-decoration: underline;}
 ul{
     list-style: none;
     padding: 0;
 }
   /********   Start        Footer    ********/
 footer{
+    position: absolute;
     display: flex;
     flex-direction: column;
     background-color: var(--Cyan2);
-    padding: 22px 3.3em 3.3em 3.3em;
+    padding: 22px 3.3em 2.5em 3.3em;
     min-height: 400px;
     width: 100%;
     color: rgba(255, 255, 255, 0.875);
@@ -37,7 +39,7 @@ footer{
     display: grid;
     grid-template-columns: 1.6fr 1fr 1fr 1.26fr;
 }#box-flex> div{
-    padding: 0 1em 1em 0;
+    padding: 0 1em 0 0;
 }
 #foo-col-1> ul> li{
     margin-bottom: 20px;
@@ -57,28 +59,156 @@ footer{
 
 img{
     display: block;
-    width: 14.7em;
+    width: 18em;
 }
 
 .card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     height: 300px;
     border: 1px solid white;
     border-radius: 8px;
     width: 77%;
     margin: auto;
-    box-shadow: 3px 3px 1px rgba(232, 232, 232, 0.41), -3px -3px 1px rgba(232, 232, 232, 0.41);
+    padding: 1.5em 1em 1.5em 2em;
+    box-shadow: 7px 7px 10px rgba(232, 232, 232, 0.41), -7px -7px 10px rgba(232, 232, 232, 0.41);
 }
 
 main{
     display: grid;
-    margin: 50px 0 50px 0;
+    margin: 50px 0 250px 0;
     grid-template-rows: auto;
     gap: 25px;
 }
 span{
     display: block;
 }
-#card-1{
-    display: flex;
+.h2{
+    display: block;
+    font-weight: 600;
+    font-size: 24px;
+    font-family: var(--poppins);
+    color: var(--Cyan2);
+    margin-bottom: 18px;
+}
 
-}#card-1-1{display: flex; flex-direction: column;}
+.card>p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 3em 0 2em;
+}
+.card>.img{
+    /* background-color: aqua; */
+    padding-left: 2em;
+}
+
+.card>.img>#card-1-2, .card>.img>#card-3-2{
+    float: right;
+}
+#card-1-1{display: flex; flex-direction: column;}
+
+/********** Ending Of main section  ********/
+header{
+    font-family: var(--openFont);
+    font-weight: 700;
+    background: url(./images/bg-hero-desktop.svg) var(--Cyan1);
+    padding: 0 30px 0 50px;
+    color: var(--Cyan2);
+    margin-bottom: 50px;
+}
+#logo{
+    width: 180px;
+    display: inline-block;
+}
+button{
+    color: var(--Cyan2);
+    font-family: var(--openFont);
+    font-weight: 700;
+    padding: 15px 45px 15px 45px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+}
+button:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+#btn-2{
+    color: white;
+    background-color: var(--pink);
+    box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.327), -1px -1px 5px rgba(128, 128, 128, 0.327);
+    width: 280px;
+}
+#btn-1{
+    font-weight: 700;
+    float: right;
+    background-color: white;
+    box-shadow: 1px 1px 7px rgba(128, 128, 128, 0.327), -1px 0px 7px rgba(128, 128, 128, 0.327);
+}
+#chat{
+    width: 700px;
+}
+#header-1{
+    margin-bottom: 70px;
+    padding-top: 50px;
+}
+#header-2{
+    display: flex;
+    padding-bottom: 50px;
+}
+#header-2> div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+#h1{
+    font-weight: 700;
+    font-size: 40px;
+    padding: 0 0 30px 0;
+    
+}
+#text{
+    padding-right: 40px;
+    margin-bottom: 40px;
+    font-weight: 400;
+
+}
+
+#airbox{
+    display:flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 250px;
+    border-radius: 20px;
+    background-color: white;
+    bottom: 200px;
+}
+
+#btn-3{
+    margin-top: 30px;
+    /* margin: auto; */
+    background-color: var(--pink);
+    width: 60%;
+    height: 70px;
+    color: white;
+    box-shadow: .4px .4px 3px rgba(128, 128, 128, 0.327), -1px 0px 3px rgba(128, 128, 128, 0.327);
+    font-size: 1em;
+    border-radius: 50px;
+}
+
+#h0{
+    font-family: var(--poppins);
+    font-weight: 600;
+    font-size: 2em;
+    color: var(--Cyan2);
+    text-align: center;
+    padding: 0;
+}
+#foo-col-4>i:hover{
+    color: var(--pink);
+    cursor: pointer;
+}
