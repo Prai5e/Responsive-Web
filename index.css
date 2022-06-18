@@ -186,6 +186,9 @@ button:hover{
     border-radius: 20px;
     background-color: white;
     bottom: 200px;
+    margin: auto;
+    padding: 1.5em 1em 1.5em 2em;
+    box-shadow: 7px 7px 10px rgb(232 232 232 / 41%), -7px -7px 10px rgb(232 232 232 / 41%);
 }
 
 #btn-3{
@@ -211,4 +214,66 @@ button:hover{
 #foo-col-4>i:hover{
     color: var(--pink);
     cursor: pointer;
+}
+
+
+@media (min-width: 375px) and (max-width: 1024px){
+    header{
+        background-image: url(./images/bg-hero-mobile.svg);
+        padding: 0 2em 0 2em;
+    }
+    #chat{
+        width: 90vw;
+    }
+    #logo{
+        width: 5em;
+    }
+    #btn-1{
+        padding: 1em 1em 1em 1em;
+        font-size: 14px;
+    }
+    #header-2{
+        flex-direction: column;
+    }
+    .card {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: none;
+        height: auto;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    body{
+        font-size: 14px;
+    }
+    #img>img{
+        /* padding-left: 0; */
+        width: 80%;
+    }
+    .card>.img{
+        padding:0;
+    }
+    #btn-3{
+        font-size: 16px;
+    }
+    #airbox{
+        width:auto;
+        padding: 24px;
+    }
+    #box-flex{
+        display: block;
+        margin-bottom: 20px;
+    }
+    #foo-col-2> ul> li, #foo-col-3> ul> li {
+        margin-bottom: 10px;
+    }
+    #h0{
+        font-size: 14px;
+    }
+    .p{
+        font-size: 10px;
+        text-align: center;
+    }
 }
