@@ -36,7 +36,7 @@ main{
 }
 #box-1> h1{
     font-weight: 700;
-    padding-right: 2.5em;
+    font-size: 46px;
     margin-bottom: 20px;
 }
 #box-1> p{
@@ -50,9 +50,9 @@ main{
 #form{
     display: flex;
     flex-direction: column;
-    height: 65vh;
+    height: 400px;
     width: 100%;
-    padding: 1em 2em 1em 2em;
+    padding: 1.5em 2em 1em 2em;
     border: 1px solid transparent;
     border-radius: 7px;
     box-shadow: 0px 5px rgba(0, 0, 0, 0.411);
@@ -120,24 +120,48 @@ button:hover{
     color: var(--gray-blue);
 }
 
-@media (min-width: 1440px){
+@media (min-width: 1021px){
     body{
         background: url(./images/bg-intro-desktop.png), hsl(0, 100%, 74%);
     }   
 }
-@media (min-width: 375px){
+@media(min-width: 375px) and (max-width: 1020px){
     body{
         background: url(./images/bg-intro-mobile.png), hsl(0, 100%, 74%);
     }
-}
-
-#delete-me{
-    width:50%;
-    height: 60px;
-    border: 2px outset rgba(128, 128, 128, 0.519);
-    border-radius: 7px;
-    background-color: rgb(58, 47, 11);
-    margin:auto;
-    padding: 40px;
-    box-shadow: 0px 5px rgba(0, 0, 0, 0.411);
+    main{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
+    main> div {
+        width: 85%;
+        height: auto;
+        margin-bottom: 70px;
+    }
+    #form{
+        height: auto;
+    }
+    #form> p {
+        margin-bottom: 10px;
+        padding: 0 2.3em 0 2.3em;
+        line-height: 1.5;
+    }
+    #p {
+        padding: 1em 4em 1em 4em;
+        line-height: 1.5;
+    }
+    #box-1> p {
+        text-align: center;
+        direction: rtl;
+        line-height: 1.5;
+    }
+    #box-1> h1 {
+        font-size: 2em;
+        text-align: center;
+        padding: 2px;
+    }
+    #box-1 {
+        margin-top: 40px;}
 }
